@@ -1,0 +1,8 @@
+rootProject.name = 'Hadoop'
+
+include 'PatentInverse'
+include 'PatentReferencesCount'
+include 'PatentCitationHistogram'
+
+include 'PatentInverseNewAPI'
+

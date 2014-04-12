@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Hadoop.iml" filepath="$PROJECT_DIR$/Hadoop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PatentCitationHistogram/PatentCitationHistogram.iml" filepath="$PROJECT_DIR$/PatentCitationHistogram/PatentCitationHistogram.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PatentInverse/PatentInverse.iml" filepath="$PROJECT_DIR$/PatentInverse/PatentInverse.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PatentInverseNewAPI/PatentInverseNewAPI.iml" filepath="$PROJECT_DIR$/PatentInverseNewAPI/PatentInverseNewAPI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PatentReferencesCount/PatentReferencesCount.iml" filepath="$PROJECT_DIR$/PatentReferencesCount/PatentReferencesCount.iml" />
+    </modules>
+  </component>
+</project>
+

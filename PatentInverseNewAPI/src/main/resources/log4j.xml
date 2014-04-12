@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+    <appender name="consoleAppender" class="org.apache.log4j.ConsoleAppender">
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="[%-5p] %d{HH:mm:ss.SSS} [%t]  - %m%n"/>
+        </layout>
+    </appender>
+    <appender name="myNoticeConsoleAppender" class="org.apache.log4j.ConsoleAppender">
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="[MyNotice]> %d{HH:mm:ss.SSS} [%t] - %m%n"/>
+        </layout>
+    </appender>
+    <appender name="fileErrorAppener" class="org.apache.log4j.RollingFileAppender">
+        <param name="Threshold" value="ERROR"/>
+        <param name="File" value="PatentInverseNewAPI/src/main/resources/error.log"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %m%n"/>
+        </layout>
+    </appender>
+    <appender name="fileDebugAppener" class="org.apache.log4j.RollingFileAppender">
+        <param name="Threshold" value="DEBUG"/>
+        <param name="File" value="PatentInverseNewAPI/src/main/resources/debug.log"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %m%n"/>
+        </layout>
+    </appender>
+
+    <root>
+        <level value="ALL"/>
+        <appender-ref ref="fileDebugAppener"/>
+    </root>
+    <logger name="com.daoleen">
+        <level value="WARN"/>
+        <appender-ref ref="myNoticeConsoleAppender"/>
+    </logger>
+    <logger name="org.apache.hadoop">
+        <level value="ERROR"/>
+        <appender-ref ref="consoleAppender"/>
+        <appender-ref ref="fileErrorAppener"/>
+    </logger>
+</log4j:configuration>
