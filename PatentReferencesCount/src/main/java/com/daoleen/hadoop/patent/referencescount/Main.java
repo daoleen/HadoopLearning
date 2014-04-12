@@ -12,7 +12,7 @@ import org.apache.hadoop.util.ToolRunner;
  * PatentReferencesCount
  * Считает количество ссылок на каждый из патентов
  *
- * Created by alex on 12.4.14.
+ * Created by alex on 12.4.2014.
  */
 public class Main extends Configured implements Tool {
     @Override
