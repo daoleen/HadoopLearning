@@ -15,6 +15,7 @@ import org.apache.hadoop.util.ToolRunner;
  * Created by alex on 12.4.2014.
  */
 public class Main extends Configured implements Tool {
+
     @Override
     public int run(String[] args) throws Exception {
         Configuration conf = getConf();
